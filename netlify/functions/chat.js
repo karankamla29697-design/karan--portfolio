@@ -1,5 +1,5 @@
 
-const fetch = require('node-fetch');
+// Using built-in fetch from Node 18 (Netlify runtime)
 exports.handler = async function(event, context) {
   try {
     const { message } = JSON.parse(event.body || '{}');
